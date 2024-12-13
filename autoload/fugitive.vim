@@ -7915,7 +7915,7 @@ function! s:MapGitOps(is_ftplugin) abort
   exe s:Map('n', 'cv<Space>', ':tab Git commit -v<Space>', '', ft)
   exe s:Map('n', 'cv<CR>', ':tab Git commit -v<CR>', '', ft)
   exe s:Map('n', 'ca', ':<C-U>Git commit --amend<CR>', '<silent>', ft)
-  exe s:Map('n', 'cc', ':<C-U>Git commit<CR>', '<silent>', ft)
+  exe s:Map('n', 'cc', ':<C-U>Git commit -S -s<CR>', '<silent>', ft)
   exe s:Map('n', 'ce', ':<C-U>Git commit --amend --no-edit<CR>', '<silent>', ft)
   exe s:Map('n', 'cw', ':<C-U>Git commit --amend --only<CR>', '<silent>', ft)
   exe s:Map('n', 'cva', ':<C-U>tab Git commit -v --amend<CR>', '<silent>', ft)
